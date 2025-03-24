@@ -1,0 +1,42 @@
+@font-face {
+  font-family: playfair;
+  src: url(./assets/fonts/playfair/playfair-display.regular.ttf);
+}
+@font-face {
+  font-family: playfairI;
+  src: url(./assets/fonts/playfair/playfair-display.italic.ttf);
+}
+@font-face {
+  font-family: playfairIB;
+  src: url(./assets/fonts/playfair/playfair-display.bold-italic.ttf);
+}
+@font-face {
+  font-family: playfairB;
+  src: url(./assets/fonts/playfair/playfair-display.bold.ttf);
+}
+@font-face {
+  font-family: teachersM;
+  src: url(./assets/fonts/teachers/Teachers-Medium.ttf);
+}
+@font-face {
+  font-family: teachersB;
+  src: url(./assets/fonts/teachers/Teachers-Bold.ttf);
+}
+@font-face {
+  font-family: playfairBLI;
+  src: url(./assets/fonts/playfair/playfair-display.black-italic.ttf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: playfairB;
+}
+p,
+a,
+button,
+li {
+  font-family: teachersM;
+}

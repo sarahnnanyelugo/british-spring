@@ -1,0 +1,64 @@
+// @import "../../variables";
+
+.modal-body {
+  max-height: 800px;
+  margin-top: 0px !important;
+  overflow: scroll;
+  h5 {
+    font-family: garamondB;
+    color: red;
+    font-weight: bold;
+  }
+  img {
+    border-radius: 10px;
+  }
+}
+.story-time {
+  height: 500px;
+
+  cursor: pointer;
+  h5 {
+    padding: 10px;
+    font-family: garamondB;
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+    &:hover {
+      color: #b5d2ee;
+    }
+  }
+
+  p {
+    padding-left: 10px;
+    font-family: figtreeB;
+    color: grey;
+    font-size: 13px;
+  }
+}
+.modal-content {
+  max-height: 900px;
+  border: none !important;
+  img {
+    // height: 200px !important;
+  }
+  p {
+    font-family: figtreeB;
+    color: rgb(94, 92, 92);
+    line-height: 30px;
+  }
+  small {
+    // color: red;
+    margin-bottom: 40px;
+    font-family: figtreeB;
+  }
+}
+.slider-container {
+  .each-news {
+    height: 350px;
+    margin: 6px;
+    img {
+      object-fit: cover;
+      height: 200px;
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.facilities-div {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  background: #fff;
+  @media screen and (max-width: 820px) {
+    padding-top: 50px;
+  }
+  h1 {
+    font-size: 65px;
+    color: #252c6a;
+    @media screen and (max-width: 820px) {
+      font-size: 35px;
+    }
+    span {
+      color: #bc476f;
+      font-family: playfairBLI;
+    }
+  }
+  span {
+    color: #ffb71b;
+  }
+  p {
+    padding-top: 60px;
+    font-size: 14px;
+    font-family: teachersB;
+    color: #bc476f;
+  }
+
+  .facilities-container {
+    height: 400px;
+    background-image: url("../../assets/images/comp.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .facilities-container2 {
+    height: 400px;
+    background-image: url("../../assets/images/spt.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .facilities-container3 {
+    height: 400px;
+    background-image: url("../../assets/images/sci.webp");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.hot-spot-btn {
+  border: none;
+  background: #bc476f;
+  color: #fff;
+  border-radius: 100%;
+  animation: zoomEffect 2s infinite ease-in-out;
+  position: relative;
+  box-shadow: 0 0 10px rgba(37, 44, 106, 0.5);
+  &:hover {
+    animation: none;
+  }
+}
+
+.hot-spot-btn::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: rgba(225, 225, 225, 0.3);
+  z-index: -1;
+  animation: glowEffect 2s infinite ease-in-out;
+  &:hover {
+    animation: none;
+  }
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes glowEffect {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+.fac-div {
+  position: relative;
+  .fac-overlay {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 45%,
+      rgba(24, 24, 108, 1) 98%
+    );
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    padding: 100px;
+    right: 0;
+    position: absolute;
+    h3 {
+      color: #fff;
+      margin-top: 60px;
+    }
+  }
+}
+
+/* Custom styling for tooltip */
+.custom-tooltip {
+  background: rgba(37, 44, 106, 0.9) !important;
+  color: #fff !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  height: 100px;
+  width: 140px !important;
+  font-size: 20px !important;
+  font-family: teachersB;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+  //   position: relative; /* Required for pointer positioning */
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+/* Apply transition when tooltip is visible */
+[aria-hidden="false"].custom-tooltip {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+.modal-backdrop {
+  --bs-backdrop-opacity: 0.9;
+}
+.hot-spot-div {
+}
+.facility-body {
+  padding-left: 15px;
+  h5 {
+    margin-bottom: 20px;
+    color: #252c6a;
+  }
+}

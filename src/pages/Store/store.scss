@@ -1,0 +1,358 @@
+.store-container {
+  padding: 20px 20px;
+  .items-div {
+    padding-left: 30px;
+    @media screen and (max-width: 820px) {
+      padding-left: 0;
+    }
+  }
+  .dropdown-toggle {
+    background: inherit;
+    color: #000;
+    border: none;
+    margin-top: 14px;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .dropdown-menu {
+    width: 250px;
+    padding: 10px;
+  }
+  .store-container-inner {
+    border: solid 1px #e7e7e7;
+    padding: 10px;
+    border-radius: 6px;
+    ul li {
+      margin-top: 20px;
+      cursor: pointer;
+
+      border: none;
+      padding: 5px 15px 5px 15px;
+      border-radius: 10px;
+      font-family: rebondG-Medium;
+      // color: #fff;
+    }
+    .active {
+      background: #0098da;
+      color: #fff;
+    }
+  }
+  .filter-btn {
+    border: 1px solid #e7e7e7;
+    border-radius: 30px;
+    background: #fff;
+    margin: 20px 5px;
+    padding: 5px 20px;
+    font-family: rebondG-Medium;
+    font-size: 14px;
+    img {
+      height: 15px;
+      width: 15px;
+      margin-right: 7px;
+    }
+  }
+}
+.store-item {
+  margin-bottom: 30px;
+  h6 {
+    font-size: 12px;
+  }
+  img {
+    border: solid 1px #e7e7e7;
+    border-radius: 6px;
+  }
+  button {
+    border: solid 1px #e7e7e7;
+    background: #fff;
+
+    font-size: 14px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    &:hover {
+      background: #0098da;
+      color: #fff;
+    }
+  }
+}
+.store-head {
+  padding: 20px 25px 0 20px;
+}
+.cart-count {
+  font-size: 12px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin-left: 5px;
+}
+.cart-page {
+  padding: 20px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  .item-image {
+    width: 50px;
+    height: 50px;
+  }
+  .cart-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  h5 {
+    margin-bottom: 30px !important;
+  }
+}
+.cart-icon {
+  color: #000;
+}
+.clear-cart-modal {
+  /* Overlay background */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  /* Modal content box */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+
+  /* Modal action buttons */
+  .modal-actions button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .modal-actions button:hover {
+    opacity: 0.8;
+  }
+}
+
+.item-details {
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    z-index: 1000; /* make sure it's on top */
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    min-width: 300px;
+    z-index: 1001;
+  }
+}
+.details-modal {
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal-content2 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 573px;
+
+    img {
+      border-radius: 15px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .details {
+      padding-left: 10px;
+    }
+    .purchase-info {
+      background: #f0f9fd;
+
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 12px;
+    }
+    a {
+      color: #0098da;
+      text-decoration: underline;
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .quantity-control {
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .add-to-cart-btn2 {
+    background: #0098da;
+    color: #fff;
+    padding: 5px 10px;
+    border: solis 1px #414244;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 14px;
+    &:hover {
+      background: #005b83;
+    }
+  }
+  .cancel-cart-btn {
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    border: solid 1px #cac7c7;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+
+  .add-to-cart-btn:hover {
+    background: #0056b3;
+  }
+}
+.cart-table {
+  tr {
+    border: none !important;
+  }
+  th {
+    text-align: left;
+  }
+}
+.cart-page th,
+.cart-page td {
+  border: none !important;
+  padding: 0;
+  font-family: rebondBook !important;
+  font-size: 14px;
+}
+.cart-page {
+  td {
+    background: #f9fafb;
+    border-radius: 16px;
+    text-align: left;
+    padding: 0 !important;
+  }
+
+  .item-btns {
+    button {
+      border: solid 1px #e7e7e7;
+      padding: 0px 15px;
+      border-radius: 14px;
+      margin-right: 5px;
+      background: #fff;
+      font-family: rebondBook;
+    }
+  }
+  .store-actions {
+    span {
+      cursor: pointer;
+      margin-right: 10px;
+      font-family: rebondG-Mediu;
+    }
+    .remove {
+      color: #ec4958;
+    }
+  }
+}
+.product-name {
+  font-family: rebondG-Medium !important;
+}
+.empty-div {
+  margin-top: 200px;
+}
+.clear-cart-btn {
+  background: #ec4958;
+  border-radius: 30px;
+  color: #fff;
+  padding: 4px 14px;
+  border: solid 1px #575757;
+}
+.checkout-btn {
+  background: #2f99da !important;
+  border-radius: 30px;
+  color: #fff;
+  padding: 4px 14px;
+  border: solid 1px #575757;
+}
+.cart-item-div {
+  border: solid 1px #e7e7e7;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+.cart-outer {
+  padding: 10px 20px;
+}
+.back-link {
+  border: solid 1px #e7e7e7;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 4px 14px;
+  color: #000;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.selection-btns {
+  border: solid 1px #e7e7e7;
+  padding: 0px 12px;
+  border-radius: 13px;
+  margin-right: 3px;
+  background: #fff;
+  font-family: rebondBook;
+  font-size: 12px;
+}

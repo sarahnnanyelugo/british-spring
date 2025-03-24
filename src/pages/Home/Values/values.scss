@@ -1,0 +1,134 @@
+.business-pricing-tab {
+  background: #fff;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 820px) {
+    padding-top: 50px;
+  }
+  h1 {
+    font-size: 65px;
+    color: #252c6a;
+    @media screen and (max-width: 820px) {
+      font-size: 35px;
+    }
+    span {
+      font-family: playfairBLI;
+      color: #0071ce;
+    }
+  }
+  .divi-intro {
+    padding-top: 130px;
+    span {
+      color: #ffb71b;
+    }
+    p {
+      font-size: 14px;
+      font-family: playfairB;
+      color: #0071ce;
+    }
+  }
+  .tabs {
+    display: flex;
+    border-radius: 35px;
+    width: 45%;
+    padding: 20px 3px;
+
+    font-family: playfairB;
+    @media screen and (max-width: 820px) {
+      width: 100%;
+    }
+  }
+
+  .tab {
+    width: 50%;
+    background: #e6e6e7;
+    height: 80px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    color: #252c6a;
+    font-family: teachersB;
+
+    font-size: 18px;
+    @media screen and (max-width: 820px) {
+      width: 100%;
+      font-size: 12px;
+    }
+    small {
+      font-size: 10px;
+      color: #0071ce;
+    }
+  }
+
+  button.active2 {
+    font-weight: bold;
+    background: #252c6a;
+    transition: 0.5s ease;
+    color: #fff;
+    margin-top: 20px;
+    box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    small {
+      color: #fff;
+    }
+  }
+
+  .panel {
+    display: none;
+    color: #161617;
+    line-height: 40px;
+    padding-top: 15px;
+    background: #fff;
+  }
+}
+.panel.active2 {
+  display: block;
+}
+.category-details {
+  background: #fff;
+  height: 400px;
+  margin-left: -80px;
+  position: relative;
+  box-shadow: -1px 2px 27px 0px rgba(207, 205, 205, 0.75);
+  -webkit-box-shadow: -1px 2px 27px 0px rgba(207, 205, 205, 0.75);
+  -moz-box-shadow: -1px 2px 27px 0px rgba(207, 205, 205, 0.75);
+  margin-top: 100px;
+  padding: 55px 50px;
+  @media screen and (max-width: 820px) {
+    height: fit-content;
+    padding: 10px;
+    margin-left: -280px;
+    margin-top: 250px;
+  }
+  h2 {
+    margin-bottom: 30px;
+    color: #252c6a;
+  }
+  p {
+    line-height: 30px;
+    margin-bottom: 40px;
+    font-family: teachersM;
+  }
+  a {
+    color: #252c6a;
+    text-decoration: none;
+    font-family: teachersM;
+
+    display: flex;
+    .cat-link {
+      height: 30px !important;
+      width: 30px !important;
+      border-radius: 50%;
+      padding-top: 0px;
+      color: #fff;
+      background: #0071ce;
+      font-size: 18px;
+      margin-top: 8px;
+      margin-left: 10px;
+    }
+    .icon {
+      margin-top: -13px;
+    }
+  }
+}
