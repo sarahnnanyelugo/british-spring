@@ -25,6 +25,7 @@ export const TopNav = () => {
           case "/sch-store":
           case "/sign-up":
           case "/cart-items":
+          case "/main-news":
             setShowNav(false);
             break;
           default:
@@ -41,6 +42,10 @@ export const TopNav = () => {
     "/history": "green",
     "/about": "purple",
     "/academics": "orange",
+    "/welcome": "#252C6A",
+    "/apply": "#ba4a6e",
+    "/history": "grey",
+    "/vision": "#0d2f02",
   };
 
   // Get the default background color based on the current route
@@ -82,7 +87,7 @@ export const TopNav = () => {
             }}
           >
             <Link to={"/"} className="col-md-1">
-              <img src={Logo} width="55%" />
+              <img src={Logo} width="40%" />
             </Link>
             <div style={{ flexGrow: 1 }} />
 
@@ -104,20 +109,22 @@ export const TopNav = () => {
                           paddingLeft: "0px",
                         }}
                       >
-                        <li class="dropdown_item-1">
-                          <Link>Our History</Link>
-                        </li>
                         <li class="dropdown_item-2">
-                          <NavLink>Welcome Message</NavLink>
+                          <Link to={"/history"}>Our History</Link>
                         </li>
                         <li class="dropdown_item-3">
-                          <NavLink>Our Vision & Mission</NavLink>
+                          <NavLink to={"/vision"}>Our Vision & Mission</NavLink>
                         </li>
                         <li class="dropdown_item-4">
                           <NavLink>Our Facilities</NavLink>
                         </li>
                         <li class="dropdown_item-5">
                           <NavLink>Our Directory</NavLink>
+                        </li>{" "}
+                        <li class="dropdown_item-5">
+                          <NavLink to={"/testimonials"}>
+                            Our Tesimonials
+                          </NavLink>
                         </li>
                         <li class="dropdown_item-5">
                           <NavLink>Contact Us</NavLink>
@@ -139,6 +146,11 @@ export const TopNav = () => {
                           paddingLeft: "30px",
                         }}
                       >
+                        {" "}
+                        <li class="dropdown_item-1">
+                          {" "}
+                          <NavLink to={"/welcome"}>Welcome Message</NavLink>
+                        </li>
                         <li class="dropdown_item-1">
                           <Link>Why B.S.C. ?</Link>
                         </li>
@@ -152,7 +164,7 @@ export const TopNav = () => {
                           <NavLink>Tuition & Fees</NavLink>
                         </li>
                         <li class="dropdown_item-5">
-                          <NavLink>Apply</NavLink>
+                          <NavLink to={"/apply"}>Apply</NavLink>
                         </li>
                       </div>
                     </ul>

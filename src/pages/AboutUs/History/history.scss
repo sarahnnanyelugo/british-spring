@@ -1,0 +1,115 @@
+.history-div {
+  margin-bottom: 120px;
+  .banner {
+    height: 700px;
+    img {
+      object-fit: cover;
+    }
+  }
+  h1 {
+    margin-top: 220px;
+  }
+  .history-body {
+    padding-top: 80px;
+  }
+  .accordion-body {
+    border-left: solid 5px #252c6a;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #252c6a;
+  }
+
+  .main_box {
+    width: 94%;
+    height: 80vh;
+    display: flex;
+    .img {
+      flex: 1;
+      height: 100%;
+      transform: skew(10deg);
+      cursor: pointer;
+      margin: 0 0.125em;
+      transition: all 0.3s;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0.75em;
+      background-color: rgba(0, 0, 0, 0.6);
+      transform: rotate(-90deg);
+      transform-origin: 0% 0%;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      font-family: teachersB;
+      color: rgb(84, 173, 245);
+      white-space: nowrap;
+    }
+
+    .img1 {
+      background-image: url("../../../assets/images/1990.webp");
+    }
+
+    .img2 {
+      background-image: url("../../../assets/images/2000.webp");
+    }
+
+    .img3 {
+      background-image: url("../../../assets/images/1995.webp");
+    }
+
+    .img4 {
+      background-image: url("../../../assets/images/2010.webp");
+    }
+    .img10 {
+      background-image: url("../../../assets/images/2025.webp");
+    }
+    .img9 {
+      background-image: url("../../../assets/images/2020.webp");
+    }
+    .img8 {
+      background-image: url("../../../assets/images/2015.webp");
+    }
+    .img7 {
+      background-image: url("../../../assets/images/2010.webp");
+    }
+    .img6 {
+      background-image: url("../../../assets/images/2005.webp");
+    }
+
+    .main_box:hover .img {
+      transform: skew(0);
+    }
+
+    .img:hover {
+      flex: 15;
+    }
+
+    .img:hover p {
+      background-color: transparent;
+      border: 0.125em solid rgb(84, 173, 245);
+      color: #000;
+      transform: rotate(0deg);
+      font-size: 20px;
+    }
+  }
+  .impact {
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      background: #252c6a;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 5px;
+      &:hover {
+        background: #4a54ac;
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@ export const BlogPage = () => {
   return (
     <>
       {" "}
-      <div className="postgraduate-page">
+      <div className="blog-page">
         <center>
           <h1>our news hub</h1>
         </center>

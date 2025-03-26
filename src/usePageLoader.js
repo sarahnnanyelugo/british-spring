@@ -10,7 +10,7 @@ const usePageLoader = () => {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
-      }, 500); // Adjust the timeout as needed
+      }, 1500); // Adjust the timeout as needed
     };
 
     handleRouteChange(); // Initial load

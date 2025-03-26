@@ -1,3 +1,5 @@
+@import "./variables";
+
 @font-face {
   font-family: playfair;
   src: url(./assets/fonts/playfair/playfair-display.regular.ttf);
@@ -23,6 +25,10 @@
   src: url(./assets/fonts/teachers/Teachers-Bold.ttf);
 }
 @font-face {
+  font-family: teachersBI;
+  src: url(./assets/fonts/teachers/Teachers-BoldItalic.ttf);
+}
+@font-face {
   font-family: playfairBLI;
   src: url(./assets/fonts/playfair/playfair-display.black-italic.ttf);
 }
@@ -39,4 +45,7 @@ a,
 button,
 li {
   font-family: teachersM;
+}
+.app-red {
+  color: #6a2541;
 }

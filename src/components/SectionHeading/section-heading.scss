@@ -1,0 +1,20 @@
+@import "../../variables";
+
+.section-head {
+  .head1 {
+    font-size: 64px;
+    font-family: teachersB !important;
+
+    @media screen and (max-width: 820px) {
+      font-size: 20px;
+    }
+  }
+  .head2 {
+    font-size: 75px;
+    font-family: playfairBLI;
+    color: $appcolor4;
+    @media screen and (max-width: 820px) {
+      font-size: 24px;
+    }
+  }
+}

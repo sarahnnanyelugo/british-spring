@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Home } from "./pages/Home/Home";
 import { TopNav } from "./components/TopNav/TopNav";
 import { Footer } from "./components/Footer/Footer";
-import { History } from "./pages/History/History";
 import { MainBlog } from "./pages/BlogPage/MainBlog/MainBlog";
 import { BlogPage } from "./pages/BlogPage/BlogPage";
 import { SignUp } from "./pages/SignUp/SignUp";
@@ -15,6 +14,11 @@ import Loader from "./components/Loader/Loader";
 import { Store } from "./pages/Store/Store";
 import { CartItems } from "./pages/Store/CartItems";
 import { useState } from "react";
+import { Welcome } from "./pages/AboutUs/Welcome/Welcome";
+import { Apply } from "./pages/AboutUs/Apply/Apply";
+import { History } from "./pages/AboutUs/History/History";
+import { Testimonials } from "./pages/AboutUs/Testimonials/Testimonials";
+import { VisionMission } from "./pages/AboutUs/Vision&Mission/Vision&Mission";
 
 function App() {
   const loading = usePageLoader();
@@ -49,6 +53,11 @@ function App() {
         <Route path="main-news/:blog_id" element={<MainBlog />} />
         <Route path="blog-page" element={<BlogPage />} />
         <Route path="sign-up" element={<SignUp />} />
+        <Route path="welcome" element={<Welcome />} />
+        <Route path="apply" element={<Apply />} />
+        <Route path="history" element={<History />} />
+        <Route path="testimonials" element={<Testimonials />} />
+        <Route path="vision" element={<VisionMission />} />
         <Route
           path="sch-store"
           element={

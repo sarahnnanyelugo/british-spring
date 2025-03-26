@@ -1,0 +1,79 @@
+@import "../../../variables";
+
+.testimonial-div {
+  .pre {
+    margin-top: 50px;
+    height: 120px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 6%,
+      rgba(0, 0, 0, 1) 65%,
+      rgba(0, 0, 0, 0.7147233893557423) 87%
+    );
+  }
+  .testimonial-inner {
+    background-image: url("../../../assets/images/landscape.webp");
+    margin-top: -50px;
+    background-attachment: fixed;
+    .test-div {
+      height: 3500px;
+      padding-top: 100px;
+      p {
+        font-size: 18px;
+        font-family: teachersBI;
+        margin-bottom: 0;
+      }
+      img {
+        border-radius: 100%;
+        margin-bottom: 120px;
+      }
+      h6 {
+        margin-top: 0;
+      }
+      .quote1 {
+        margin-top: 50px;
+      }
+      span {
+        font-size: 55px;
+        color: #54adf5;
+      }
+      small {
+        font-size: 14px;
+        margin-left: 20px;
+      }
+      a {
+        background: $appcolor;
+        padding: 5px 15px;
+        font-size: 28px;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          border: solid 2px #fff;
+          color: #fff;
+          background: transparent;
+        }
+      }
+    }
+    .one {
+      background: rgba(2, 16, 112, 0.5);
+    }
+    .two {
+      margin-top: 0;
+      background: rgb(12, 16, 112, 0.5);
+      background: linear-gradient(
+        180deg,
+        rgba(2, 16, 112, 0.5) 0%,
+        rgba(24, 24, 108, 1) 20%
+      );
+    }
+  }
+  .banner {
+    height: 600px;
+    border: solid 3px grey;
+    margin-top: 60px;
+  }
+  color: rgba(128, 128, 128, 0.5);
+  color: rgba(0, 128, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+}

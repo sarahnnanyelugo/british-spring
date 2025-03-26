@@ -1,0 +1,35 @@
+@import "../../../variables";
+
+.vision-div {
+  margin-bottom: 80px;
+  .banner {
+    // height: 600px;
+  }
+  h1 {
+    margin-top: 80px;
+  }
+  .cream {
+    height: 260px;
+    background: #fcf9f0;
+    border-top: solid 3px $appcolor5;
+    padding: 40px 20px;
+    h3 {
+      color: $appcolor;
+    }
+  }
+  .long {
+    background: $appcolor;
+    height: 260px;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  img {
+    border-bottom: solid 3px $appcolor5;
+  }
+  .move {
+    margin-top: -180px;
+  }
+  .mid {
+    margin-top: 40px;
+  }
+}

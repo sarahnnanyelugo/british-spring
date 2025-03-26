@@ -334,7 +334,7 @@ export const Home = () => {
               <hr />
             </div>
             <button>INQUIRE</button>
-            <button>LEARN MORE</button>
+            <button>TAKE A TOUR</button>
           </div>
         </div>
       </div>

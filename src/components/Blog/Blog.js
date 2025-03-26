@@ -10,7 +10,7 @@ export const Blog = ({ data }) => {
   });
 
   return (
-    <div className="news-component col-md-6 flexy flexyM">
+    <div className="news-component col-md-6 d-flex">
       <div
         className="col-md-5 col-5 news-img"
         style={{ backgroundImage: `url(${data.img})` }}
