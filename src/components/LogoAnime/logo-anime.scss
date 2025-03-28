@@ -1,0 +1,20 @@
+.logo-bg {
+  //   background: url("../../assets/images/star.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  width: 60px;
+  animation: circle 6s linear infinite;
+  img {
+    margin-left: -0px;
+  }
+}
+// @keyframes circle {
+//   0% {
+//     transform: rotate(0deg) translate(-165px) rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg) translate(-165px) rotate(-360deg);
+//   }
+// }

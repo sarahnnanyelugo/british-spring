@@ -1,0 +1,14 @@
+@import "../../../variables";
+
+.tuition {
+  .banner {
+    height: 650px;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: transparent;
+  }
+  span {
+    color: $appcolor !important;
+  }
+}

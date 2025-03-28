@@ -1,0 +1,134 @@
+@import "../../../variables";
+
+.overview {
+  .first-head {
+    // margin-top: 120px;
+
+    h1 {
+      font-size: 65px;
+      color: $appcolor;
+    }
+    h3 {
+      font-family: teachersB;
+      color: $appcolor2;
+      margin-top: 50px;
+    }
+    p {
+      color: grey;
+      padding-right: 15px;
+    }
+    strong {
+      color: rgb(89, 86, 86);
+    }
+    .inner {
+      height: 400px;
+      background: url("../../../assets/images/classSec.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .overview-outer {
+      position: relative;
+      &:hover {
+        .overview-overlay {
+          opacity: 1;
+
+          height: 70%;
+        }
+      }
+    }
+    .overview-overlay {
+      position: absolute;
+      height: 20%;
+      background: $appcolorLight;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      transition: 0.5s ease;
+      padding-top: 20px;
+      overflow: hidden;
+      a {
+        font-size: 20px;
+        color: $appcolor;
+      }
+      p {
+        color: $appcolor;
+      }
+      h4 {
+        color: $appcolor2;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .initial-img {
+    margin-top: 80px;
+  }
+  .others {
+    padding-top: 130px;
+    h4 {
+      color: $appcolor2;
+      margin-bottom: 30px;
+    }
+    // Adjust carousel control positioning
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+      width: auto; // Prevent full-height controls
+      bottom: 10px; // Position at the bottom
+      top: 290%; // Remove top alignment
+    }
+    .carousel-indicators {
+      display: none;
+    }
+    .carousel .carousel-control-prev {
+      right: 60px; // Place near the next button
+      left: auto;
+    }
+
+    .carousel .carousel-control-next {
+      right: 30px; // 30px apart from the previous button
+    }
+  }
+
+  .writeup {
+    height: 600px;
+    padding: 50px;
+    background: rgb(92, 226, 222);
+    padding-top: 150px;
+    padding-left: 230px;
+    background: linear-gradient(
+      100deg,
+      rgba(92, 226, 222, 1) 16%,
+      rgba(58, 176, 226, 1) 87%
+    );
+    margin-left: -150px;
+    position: relative;
+    z-index: -1;
+    p {
+      color: #fff;
+    }
+  }
+}
+.overviews {
+  height: 600px;
+  width: 500px;
+  background: url("../../../assets/images/casual.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  z-index: 5;
+  margin-top: 40px;
+}
+.overviews2 {
+  height: 600px;
+  width: 500px;
+  background: url("../../../assets/images/lab.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 150px;
+  margin-top: 40px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 5;
+}

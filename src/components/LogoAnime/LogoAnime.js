@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Logo from "../../assets/images/app-logo.png";
-
+import "./logo-anime.scss";
 export const LogoAnime = () => {
   const [inView, setInView] = useState(false);
   const logoRef = useRef(null);
@@ -28,7 +28,16 @@ export const LogoAnime = () => {
   return (
     <div className="logo-anime">
       <center>
-        <img
+        <div className="logo-bg">
+          <center>
+            <img
+              // ref={logoRef}
+              src={Logo}
+              width="30px"
+            />
+          </center>
+        </div>
+        {/* <img
           ref={logoRef}
           src={Logo}
           width="30px"
@@ -36,8 +45,8 @@ export const LogoAnime = () => {
             transform: inView ? "rotate(360deg)" : "rotate(0deg)",
             transition: "transform 1s ease-in-out",
           }}
-        />
-      </center>
+        /> */}
+      </center>{" "}
     </div>
   );
 };

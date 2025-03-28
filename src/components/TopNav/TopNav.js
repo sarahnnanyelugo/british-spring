@@ -39,13 +39,17 @@ export const TopNav = () => {
   // Define background colors based on routes
   const routeBackgrounds = {
     "/": "red",
-    "/history": "green",
-    "/about": "purple",
-    "/academics": "orange",
     "/welcome": "#252C6A",
     "/apply": "#ba4a6e",
+    "/who-we-are": "#ba4a6e",
     "/history": "grey",
     "/vision": "#0d2f02",
+    "/junior": "#83c2f6",
+    "/senior": "#03506F",
+    "/overview": "#B5A8D5",
+    "/facilities": "#B5C6D5",
+    "/why-bsc": "#773838",
+    "/tuition": "#205781",
   };
 
   // Get the default background color based on the current route
@@ -110,13 +114,16 @@ export const TopNav = () => {
                         }}
                       >
                         <li class="dropdown_item-2">
+                          <Link to={"/who-we-are"}>Who we are</Link>
+                        </li>{" "}
+                        <li class="dropdown_item-2">
                           <Link to={"/history"}>Our History</Link>
                         </li>
                         <li class="dropdown_item-3">
                           <NavLink to={"/vision"}>Our Vision & Mission</NavLink>
                         </li>
                         <li class="dropdown_item-4">
-                          <NavLink>Our Facilities</NavLink>
+                          <NavLink to={"/facilities"}>Our Facilities</NavLink>
                         </li>
                         <li class="dropdown_item-5">
                           <NavLink>Our Directory</NavLink>
@@ -126,9 +133,9 @@ export const TopNav = () => {
                             Our Tesimonials
                           </NavLink>
                         </li>
-                        <li class="dropdown_item-5">
+                        {/* <li class="dropdown_item-5">
                           <NavLink>Contact Us</NavLink>
-                        </li>
+                        </li> */}
                       </div>
                     </ul>
                   </li>
@@ -152,7 +159,7 @@ export const TopNav = () => {
                           <NavLink to={"/welcome"}>Welcome Message</NavLink>
                         </li>
                         <li class="dropdown_item-1">
-                          <Link>Why B.S.C. ?</Link>
+                          <Link to={"/why-bsc"}>Why B.S.C. ?</Link>
                         </li>
                         <li class="dropdown_item-2">
                           <NavLink>Requirements</NavLink>
@@ -161,7 +168,7 @@ export const TopNav = () => {
                           <NavLink>Take a Tour</NavLink>
                         </li>
                         <li class="dropdown_item-4">
-                          <NavLink>Tuition & Fees</NavLink>
+                          <NavLink to={"/tuition"}>Tuition & Fees</NavLink>
                         </li>
                         <li class="dropdown_item-5">
                           <NavLink to={"/apply"}>Apply</NavLink>
@@ -184,13 +191,13 @@ export const TopNav = () => {
                         }}
                       >
                         <li class="dropdown_item-1">
-                          <NavLink>Overview</NavLink>
+                          <NavLink to={"/overview"}>Overview</NavLink>
                         </li>
                         <li class="dropdown_item-2">
-                          <NavLink>Junior Secondary</NavLink>
+                          <NavLink to={"/junior"}>Junior Secondary</NavLink>
                         </li>
                         <li class="dropdown_item-3">
-                          <NavLink>Senior Secondary</NavLink>
+                          <NavLink to={"/senior"}>Senior Secondary</NavLink>
                         </li>
                         <li class="dropdown_item-4">
                           <NavLink>Curriculum</NavLink>
@@ -231,7 +238,7 @@ export const TopNav = () => {
                     </ul>
                   </li>{" "}
                   <li class="dropdown">
-                    <Link>Portal</Link>
+                    <Link to={"/contact"}>Contact Us</Link>
                   </li>
                   <li class="dropdown">
                     <Link className="news-link" to={"blog-page"}>

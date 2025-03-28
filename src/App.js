@@ -19,6 +19,15 @@ import { Apply } from "./pages/AboutUs/Apply/Apply";
 import { History } from "./pages/AboutUs/History/History";
 import { Testimonials } from "./pages/AboutUs/Testimonials/Testimonials";
 import { VisionMission } from "./pages/AboutUs/Vision&Mission/Vision&Mission";
+import { JuniorSecondary } from "./pages/Academics/JuniorSecondary/JuniorSecondary";
+import { SeniorSecondary } from "./pages/Academics/SeniorSecondary copy/SeniorSecondary";
+import ScrollToTop from "./components/scrollToTop";
+import { Overview } from "./pages/Academics/Overview/Overview";
+import { WhoWeAre } from "./pages/AboutUs/WhoWeAre/WhoWeAre";
+import { ContactUs } from "./pages/ContactUs/ContactUs";
+import { OurFacilities } from "./pages/AboutUs/Facilities/Facilities";
+import { WhyBCS } from "./pages/Admission/WhyBSC/WhyBCS";
+import { Tuition } from "./pages/Admission/Tuition/Tuition";
 
 function App() {
   const loading = usePageLoader();
@@ -45,6 +54,7 @@ function App() {
   return (
     <>
       {loading && <Loader />}
+      <ScrollToTop />
       <TopNav />
       <Routes>
         {" "}
@@ -58,6 +68,14 @@ function App() {
         <Route path="history" element={<History />} />
         <Route path="testimonials" element={<Testimonials />} />
         <Route path="vision" element={<VisionMission />} />
+        <Route path="junior" element={<JuniorSecondary />} />
+        <Route path="senior" element={<SeniorSecondary />} />
+        <Route path="overview" element={<Overview />} />
+        <Route path="who-we-are" element={<WhoWeAre />} />
+        <Route path="contact" element={<ContactUs />} />
+        <Route path="facilities" element={<OurFacilities />} />
+        <Route path="why-bsc" element={<WhyBCS />} />
+        <Route path="tuition" element={<Tuition />} />
         <Route
           path="sch-store"
           element={
