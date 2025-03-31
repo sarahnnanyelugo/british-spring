@@ -160,6 +160,18 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  button {
+    background: transparent;
+    font-family: teachersB;
+    margin: 20px;
+    padding: 5px 15px;
+    border-radius: 35px;
+    border: solid 1px $appcolor2;
+    &:hover {
+      background: $appcolor2;
+      color: #fff;
+    }
+  }
 }
 
 .tag {
@@ -176,5 +188,11 @@
   }
   p {
     margin-top: 40px;
+  }
+  h4 {
+    color: $appcolor;
+  }
+  h6 {
+    color: $appcolor3;
   }
 }

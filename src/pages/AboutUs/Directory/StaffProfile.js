@@ -15,17 +15,10 @@ export const StaffProfile = ({
   disableNext,
   disablePrev,
 }) => {
-  //   const [show, setShow] = useState(false);
-
-  //   const handleClose = () => setShow(false);
-  //   const handleShow = () => setShow(true);
-
   return (
     <Modal show={show} onHide={handleClose} centered size="lg">
       <Modal.Header closeButton>
-        <Modal.Title>
-          <h6>{caption}'s Profile</h6>
-        </Modal.Title>
+        <h5>{caption}'s Profile</h5>
       </Modal.Header>
       <Modal.Body>
         <div className="d-md-flex profile-modal">
@@ -44,17 +37,16 @@ export const StaffProfile = ({
           </div>
         </div>
       </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
-          Close
-        </Button>{" "}
-        <Button variant="primary" onClick={onPrev} disabled={disablePrev}>
+
+      <div className="d-flex modal-navigation">
+        {" "}
+        <button onClick={onPrev} disabled={disablePrev} className=" ">
           Previous
-        </Button>
-        <Button variant="primary" onClick={onNext} disabled={disableNext}>
+        </button>
+        <button onClick={onNext} disabled={disableNext}>
           Next
-        </Button>
-      </Modal.Footer>
+        </button>
+      </div>
     </Modal>
   );
 };
