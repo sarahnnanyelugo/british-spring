@@ -28,6 +28,8 @@ import { ContactUs } from "./pages/ContactUs/ContactUs";
 import { OurFacilities } from "./pages/AboutUs/Facilities/Facilities";
 import { WhyBCS } from "./pages/Admission/WhyBSC/WhyBCS";
 import { Tuition } from "./pages/Admission/Tuition/Tuition";
+import { Gallery } from "./pages/StudentLife/Gallery/Gallery";
+import { Directory } from "./pages/AboutUs/Directory/Directory";
 
 function App() {
   const loading = usePageLoader();
@@ -76,6 +78,8 @@ function App() {
         <Route path="facilities" element={<OurFacilities />} />
         <Route path="why-bsc" element={<WhyBCS />} />
         <Route path="tuition" element={<Tuition />} />
+        <Route path="gallery" element={<Gallery />} />
+        <Route path="directory" element={<Directory />} />
         <Route
           path="sch-store"
           element={

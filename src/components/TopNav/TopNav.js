@@ -50,6 +50,8 @@ export const TopNav = () => {
     "/facilities": "#B5C6D5",
     "/why-bsc": "#773838",
     "/tuition": "#205781",
+    "/gallery": "#109790",
+    "/directory": "#000000",
   };
 
   // Get the default background color based on the current route
@@ -126,7 +128,7 @@ export const TopNav = () => {
                           <NavLink to={"/facilities"}>Our Facilities</NavLink>
                         </li>
                         <li class="dropdown_item-5">
-                          <NavLink>Our Directory</NavLink>
+                          <NavLink to={"/directory"}>Our Directory</NavLink>
                         </li>{" "}
                         <li class="dropdown_item-5">
                           <NavLink to={"/testimonials"}>
@@ -223,7 +225,7 @@ export const TopNav = () => {
                         }}
                       >
                         <li class="dropdown_item-1">
-                          <Link>Our Gallery</Link>
+                          <Link to={"/gallery"}>Our Gallery</Link>
                         </li>
                         <li class="dropdown_item-2">
                           <NavLink>Learning Activities</NavLink>

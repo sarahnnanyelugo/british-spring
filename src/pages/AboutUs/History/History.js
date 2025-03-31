@@ -23,7 +23,7 @@ export const History = () => {
           <LogoAnime />
           <hr className="col-md-6" />
         </div>
-        <div className="col-md-10 offset-md-1 history-body">
+        <div className="col-md-10 offset-md-1 history-body mobile-pad ">
           <h2>What is the history of British Spring?</h2>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
@@ -138,7 +138,7 @@ export const History = () => {
             </Accordion.Item>
           </Accordion>
         </div>{" "}
-        <div className="decades mt-5 offset-md-1">
+        <div className="decades mt-5 offset-md-1 mobile-pad ">
           <h5 style={{ color: "#3C68AF" }}>
             Twenty Years of Impact: The British Spring Timeline
           </h5>

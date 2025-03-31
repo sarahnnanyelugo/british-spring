@@ -2,11 +2,17 @@
   margin-bottom: 120px;
   .banner {
     height: 700px;
+    @media screen and (max-width: 820px) {
+      height: 300px;
+    }
     img {
       object-fit: cover;
     }
   }
   h1 {
+    @media screen and (max-width: 820px) {
+      margin-top: 20px;
+    }
     margin-top: 220px;
   }
   .history-body {
@@ -24,6 +30,9 @@
     width: 94%;
     height: 80vh;
     display: flex;
+    @media screen and (max-width: 820px) {
+      width: 99%;
+    }
     .img {
       flex: 1;
       height: 100%;
@@ -35,6 +44,9 @@
       background-size: cover;
       background-position: center;
       position: relative;
+      @media screen and (max-width: 820px) {
+        transform: skew(0deg);
+      }
     }
 
     p {
@@ -109,6 +121,10 @@
       border-radius: 5px;
       &:hover {
         background: #4a54ac;
+      }
+      @media screen and (max-width: 820px) {
+        font-size: 13px !important;
+        padding: 10px 5px;
       }
     }
   }

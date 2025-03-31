@@ -43,14 +43,13 @@ export const Apply = () => {
                 your first steps here with us.
               </p>
             </center>
-            <span className="offset-md-11">
+            <span className="offset-md-11 offset-10">
               <ImQuotesRight />
             </span>
           </div>
 
           <div className="">
             <h4>NOW LET'S BEGIN!</h4>
-            <h6>Step 1: Register online starting on March 7, 2025.</h6>
             <div className="admission-tab col-md-12 ">
               {" "}
               <div className="tabs ">

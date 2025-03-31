@@ -51,8 +51,8 @@ export const SectionHeading = (props) => {
   }, []);
   return (
     <>
-      <div className="heading-container " ref={headingRef}>
-        <div className="d-flex section-head justify-content-center align-items-center">
+      <div className="heading-container2 " ref={headingRef}>
+        <div className="d-flex section-head2 justify-content-center align-items-center">
           {" "}
           <h1
             className="head1 offset-md-"
@@ -76,7 +76,7 @@ export const SectionHeading = (props) => {
               transform: inViewHeading ? "translateX(0)" : "translateX(100px)",
               opacity: inViewHeading ? 1 : 0,
               transition: "transform 2s ease, opacity 2s ease",
-              marginLeft: "10px",
+              // marginLeft: "10px",
             }}
           >
             {text2}

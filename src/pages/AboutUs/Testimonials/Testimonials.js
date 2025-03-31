@@ -64,11 +64,11 @@ export const Testimonials = () => {
         >
           <div className="text-white text-3xl font-bold col-md-8 offset-md-2 test-body">
             <SectionHeading text1="Hear from our  " text2="Alumni" />
-            <div className="d-flex " style={{ marginTop: "150px" }}>
+            <div className="d-md-flex " style={{ marginTop: "150px" }}>
               <div className="col-md-6">
                 <img src={Test1} width="100%" />
               </div>
-              <div className="col-md-5 offset-md-1">
+              <div className="col-md-5 offset-md-1 ">
                 <span className="quote1">
                   <ImQuotesLeft />
                 </span>
@@ -94,7 +94,7 @@ export const Testimonials = () => {
                 </div>
               </div>
             </div>{" "}
-            <div className="d-flex">
+            <div className="d-md-flex">
               <div className="col-md-6">
                 <img src={Test2} width="100%" />
               </div>
@@ -114,7 +114,7 @@ export const Testimonials = () => {
                   bottom of my heart for challenging me and steering me into who
                   I am today
                 </p>{" "}
-                <span className="offset-md-10">
+                <span className="offset-md-10 offset-10">
                   <ImQuotesRight />
                 </span>
                 <div className="d-flex">
@@ -124,7 +124,7 @@ export const Testimonials = () => {
                 </div>
               </div>
             </div>{" "}
-            <div className="d-flex">
+            <div className="d-md-flex">
               <div className="col-md-6">
                 <img src={Test3} width="100%" />
               </div>
@@ -144,7 +144,7 @@ export const Testimonials = () => {
                   bottom of my heart for challenging me and steering me into who
                   I am today
                 </p>{" "}
-                <span className="offset-md-10">
+                <span className="offset-md-10 offset-10">
                   <ImQuotesRight />
                 </span>
                 <div className="d-flex">
@@ -154,7 +154,7 @@ export const Testimonials = () => {
                 </div>
               </div>
             </div>{" "}
-            <div className="d-flex">
+            <div className="d-md-flex">
               <div className="col-md-6">
                 <img src={Test4} width="100%" />
               </div>
@@ -174,7 +174,7 @@ export const Testimonials = () => {
                   bottom of my heart for challenging me and steering me into who
                   I am today
                 </p>
-                <span className="offset-md-10">
+                <span className="offset-md-10 offset-10">
                   <ImQuotesRight />
                 </span>
                 <div className="d-flex">
