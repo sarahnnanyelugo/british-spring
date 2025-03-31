@@ -104,7 +104,9 @@ export const Gallery = () => {
             </span>
           </a>
         </div>
-        <h1 className="offset-md-1">Cultural Day</h1>
+        <h1 className="offset-md-1" id="about-section">
+          Cultural Day
+        </h1>
 
         <div className="gallery-sections col-md-10 offset-md-1">
           <div id="mz-gallery-container">
@@ -159,7 +161,9 @@ export const Gallery = () => {
           )}
         </div>
 
-        <h1 className="offset-md-1">Graduation</h1>
+        <h1 className="offset-md-1" id="academics-section">
+          Graduation
+        </h1>
         <div className="gallery-sections col-md-10 offset-md-1">
           <div id="mz-gallery-container">
             <div id="mz-gallery">
