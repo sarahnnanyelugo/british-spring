@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { SectionHeading } from "../../../components/SectionHeading/SectionHeading";
 import "./gallery.scss";
 import { TbHandFingerDown } from "react-icons/tb";
@@ -10,37 +10,85 @@ import Img4 from "../../../assets/images/welcome-hero.jpg";
 import Img5 from "../../../assets/images/court.jpg";
 import Img6 from "../../../assets/images/boarding.jpg";
 import Img7 from "../../../assets/images/lib.jpg";
+const imageLinks = [
+  { src: Hero, id: "about-section", title: "About Us" },
+  { src: Img, id: "academics-section", title: "Academics" },
+  { src: Img2, id: "classrooms-section", title: "Classrooms" },
+  { src: Img3, id: "lab-section", title: "Science Lab" },
+  { src: Img4, id: "welcome-section", title: "Welcome" },
+  { src: Img7, id: "library-section", title: "Library" },
+  { src: Img5, id: "sports-section", title: "Sports" },
+  { src: Img6, id: "boarding-section", title: "Boarding House" },
+];
+
+const images = [
+  { src: "https://picsum.photos/id/818/700/700", alt: "Statue of Liberty" },
+  { src: "https://picsum.photos/id/537/700/700", alt: "Night Sky" },
+  { src: "https://picsum.photos/id/136/700/700", alt: "Ravine Between Rocks" },
+  { src: "https://picsum.photos/id/337/700/700", alt: "Wheat Farm" },
+  { src: "https://picsum.photos/id/737/700/700", alt: "City Street" },
+  { src: "https://picsum.photos/id/217/700/700", alt: "Crumbling Pier" },
+  { src: "https://picsum.photos/id/416/700/700", alt: "Foggy Mountains" },
+  { src: "https://picsum.photos/id/811/700/700", alt: "Dense Forest" },
+  { src: "https://picsum.photos/id/902/700/700", alt: "Sunset Over Mountains" },
+  {
+    src: "https://picsum.photos/id/514/700/700",
+    alt: "SUV in Front of Building",
+  },
+];
+const graduation = [
+  { src: "https://picsum.photos/id/818/700/700", alt: "Statue of Liberty" },
+  { src: "https://picsum.photos/id/537/700/700", alt: "Night Sky" },
+  { src: "https://picsum.photos/id/136/700/700", alt: "Ravine Between Rocks" },
+  { src: "https://picsum.photos/id/337/700/700", alt: "Wheat Farm" },
+  { src: "https://picsum.photos/id/737/700/700", alt: "City Street" },
+  { src: "https://picsum.photos/id/217/700/700", alt: "Crumbling Pier" },
+  { src: "https://picsum.photos/id/416/700/700", alt: "Foggy Mountains" },
+  { src: "https://picsum.photos/id/811/700/700", alt: "Dense Forest" },
+  { src: "https://picsum.photos/id/902/700/700", alt: "Sunset Over Mountains" },
+  {
+    src: "https://picsum.photos/id/514/700/700",
+    alt: "SUV in Front of Building",
+  },
+];
 
 export const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openImage = (index) => {
+    setSelectedImage(images[index]);
+    setCurrentIndex(index);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
+
+  const nextImage = () => {
+    const newIndex = (currentIndex + 1) % images.length;
+    setSelectedImage(images[newIndex]);
+    setCurrentIndex(newIndex);
+  };
+
+  const prevImage = () => {
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    setSelectedImage(images[newIndex]);
+    setCurrentIndex(newIndex);
+  };
   return (
     <>
       <div className="gallery-div">
         <div className="banner">
-          <div class="gallery">
-            <span style={{ "--i": 1 }}>
-              <img src={Hero} alt="" />
-            </span>
-            <span style={{ "--i": 2 }}>
-              <img src={Img} alt="" />
-            </span>
-            <span style={{ "--i": 3 }}>
-              <img src={Img2} alt="" />
-            </span>
-            <span style={{ "--i": 4 }}>
-              <img src={Img3} alt="" />
-            </span>
-            <span style={{ "--i": 5 }}>
-              <img src={Img4} alt="" />
-            </span>
-            <span style={{ "--i": 6 }}>
-              <img src={Img7} alt="" />
-            </span>
-            <span style={{ "--i": 7 }}>
-              <img src={Img5} alt="" />
-            </span>
-            <span style={{ "--i": 8 }}>
-              <img src={Img6} alt="" />
-            </span>
+          <div className="gallery">
+            {imageLinks.map((item, index) => (
+              <span key={index} style={{ "--i": index + 1 }}>
+                <a href={`#${item.id}`}>
+                  <img src={item.src} alt={`Go to ${item.id}`} />
+                  <div className="caption">{item.title}</div>
+                </a>
+              </span>
+            ))}
           </div>
           <br />
           <br />
@@ -56,27 +104,113 @@ export const Gallery = () => {
             </span>
           </a>
         </div>
-        <div className="col-md-10 offset-md-1" id="gallery-photos">
-          <p>
-            <img src="https://loremflickr.com/320/200" />
-            <img src="https://loremflickr.com/321/200" />
-            <img src="https://loremflickr.com/319/200" />
-            <img src="https://loremflickr.com/323/200" />
-            <img src="https://loremflickr.com/322/200" />
-          </p>
+        <h1 className="offset-md-1">Cultural Day</h1>
 
-          <p>
-            <img src="https://loremflickr.com/320/200" />
-            <img src="https://loremflickr.com/321/200" />
-            <img src="https://loremflickr.com/319/200" />
-          </p>
+        <div className="gallery-sections col-md-10 offset-md-1">
+          <div id="mz-gallery-container">
+            <div id="mz-gallery">
+              {images.map((image, index) => (
+                <figure key={index} onClick={() => openImage(index)}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    width="700"
+                    height="700"
+                  />
+                  <figcaption>
+                    <h6>Zoom</h6>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
 
-          <p>
-            <img src="https://loremflickr.com/320/200" />
-            <img src="https://loremflickr.com/321/200" />
-            <img src="https://loremflickr.com/319/200" />
-            <img src="https://loremflickr.com/323/200" />
-          </p>
+          {selectedImage && (
+            <div className="lightbox" onClick={closeImage}>
+              <div
+                className="lightbox-content"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <button
+                  className="prev"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    prevImage();
+                  }}
+                >
+                  &#10094;
+                </button>
+                <img
+                  src={selectedImage.src}
+                  alt={selectedImage.alt}
+                  className="zoomed"
+                />
+                <button
+                  className="next"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    nextImage();
+                  }}
+                >
+                  &#10095;
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+
+        <h1 className="offset-md-1">Graduation</h1>
+        <div className="gallery-sections col-md-10 offset-md-1">
+          <div id="mz-gallery-container">
+            <div id="mz-gallery">
+              {graduation.map((image, index) => (
+                <figure key={index} onClick={() => openImage(index)}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    width="700"
+                    height="700"
+                  />
+                  <figcaption>
+                    <h6>Zoom</h6>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+
+          {selectedImage && (
+            <div className="lightbox" onClick={closeImage}>
+              <div
+                className="lightbox-content"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <button
+                  className="prev"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    prevImage();
+                  }}
+                >
+                  &#10094;
+                </button>
+                <img
+                  src={selectedImage.src}
+                  alt={selectedImage.alt}
+                  className="zoomed"
+                />
+                <button
+                  className="next"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    nextImage();
+                  }}
+                >
+                  &#10095;
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>
