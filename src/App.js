@@ -30,6 +30,7 @@ import { WhyBCS } from "./pages/Admission/WhyBSC/WhyBCS";
 import { Tuition } from "./pages/Admission/Tuition/Tuition";
 import { Gallery } from "./pages/StudentLife/Gallery/Gallery";
 import { Directory } from "./pages/AboutUs/Directory/Directory";
+import { RiddlePage } from "./pages/RiddlePage/RiddlePage";
 
 function App() {
   const loading = usePageLoader();
@@ -63,6 +64,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/history" element={<History />} />
         <Route path="main-news/:blog_id" element={<MainBlog />} />
+        <Route path="riddle-page/:blog_id" element={<RiddlePage />} />
         <Route path="blog-page" element={<BlogPage />} />
         <Route path="sign-up" element={<SignUp />} />
         <Route path="welcome" element={<Welcome />} />

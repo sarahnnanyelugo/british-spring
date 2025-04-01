@@ -29,7 +29,7 @@ export const BlogPage = () => {
         </div>
       </div>
       <h3 className="offset-md-2 mt">Stay Informed</h3>
-      <div className="row row-cols-1 row-cols-lg-2  g-lg-2 col-md-8 offset-md-2 mt5">
+      <div className="row row-cols-1 row-cols-lg-2  g-lg-4 col-md-8 offset-md-2 mt5">
         {state.list.map((data, index) => (
           <Blog data={data} key={data.id} />
         ))}

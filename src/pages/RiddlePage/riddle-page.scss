@@ -1,0 +1,65 @@
+@import "../../variables";
+
+.riddle-showcase {
+  height: 400px;
+  padding: 60px;
+  background: rgb(40, 41, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 41, 75, 1) 2%,
+    rgba(25, 90, 126, 1) 39%,
+    rgba(30, 118, 123, 1) 90%
+  );
+  h1 {
+    font-size: 60px;
+    color: #fff;
+    font-family: teachersB;
+  }
+  h2 {
+    font-size: 40px;
+    color: #fff;
+    font-family: teachersB;
+    color: $appcolor4;
+  }
+}
+.riddle-dash {
+  .info {
+    padding: 1px 20px;
+    background: rgb(196, 195, 195);
+  }
+  .info2 {
+    padding: 5px 20px;
+    background: rgb(222, 220, 220);
+    height: 75px;
+    li {
+      margin: 0 10px;
+      font-size: 25px;
+      color: $appcolor;
+    }
+    h6 {
+      margin-top: 10px;
+      color: $appcolor;
+    }
+  }
+  .answer-bg {
+    background: url("../../assets/images/answer-bg.png");
+    height: 200px;
+    margin-top: 80px;
+    padding: 40px;
+    h4 {
+      color: $appcolor;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+}
+.other-riddles {
+  margin-top: 50px;
+  hr {
+    border-width: 4px !important;
+    border-color: $appcolor;
+    opacity: 1;
+    margin-top: 30px;
+  }
+}

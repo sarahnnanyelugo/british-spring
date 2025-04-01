@@ -107,3 +107,62 @@ export const latestNews = [
     id: 8,
   },
 ];
+export const riddles = [
+  {
+    id: 1,
+    question: "A girl fell off a 20-foot ladder. She wasn't hurt. How?",
+    answer: "She fell off the bottom step.",
+  },
+  {
+    question: "What are the next three letters in the sequence ",
+    questionAnchor: "O,T,T,F,F,SS",
+    answer:
+      "E, N, T. The letters are the first letters of the written numbers: one, two, three, four, five, etc. “Eight, nine, ten” are next.",
+    id: 2,
+  },
+  {
+    question: "Why did the tree want to leave the woods? ",
+    answer:
+      "E, N, T. The letters are the first letters of the written numbers: one, two, three, four, five, etc. “Eight, nine, ten” are next.",
+    id: 3,
+  },
+  {
+    question: "Which is the most shocking city in the world? ",
+    answer: "Electricity!",
+    id: 4,
+  },
+  {
+    question:
+      "What can you hear, but not see or touch, even though you control it? ",
+    answer: "Your Voice",
+    id: 5,
+  },
+  {
+    question:
+      "I can be hot, I can be cold, I can run and I can be still, I can be hard and I can be soft ",
+    questionAnchor: "What am I?",
+    answer: "Water",
+    id: 6,
+  },
+  {
+    question:
+      "What is an answer that can be used as a reply to all sorts of questions from easy to hard?",
+    answer: "I don't know!",
+    id: 7,
+  },
+  {
+    question: "What can you keep after giving to someone?",
+    answer: "Your word",
+    id: 8,
+  },
+  {
+    question: "What has words but never speaks?",
+    answer: "A book",
+    id: 9,
+  },
+  {
+    question: "What kind of band never plays music?",
+    answer: "A rubber band",
+    id: 9,
+  },
+];

@@ -17,10 +17,10 @@ export const Blog = ({ data }) => {
       ></div>
       <div className="col-md-7 col-7 news-details">
         <h5>{data.newsHeading}</h5>
-        <div className="flexy flexyM">
+        <div className="d-flex">
           <small>{data.date}</small>
-          <small>{data.view}</small>
-          <small>{data.comment}</small>
+          <small>{data.view}Likes</small>
+          <small>{data.comment}Comments</small>
         </div>
         <p>{data.newsDetails}</p>
         <Link

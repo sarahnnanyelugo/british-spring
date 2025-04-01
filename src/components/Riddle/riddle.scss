@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.riddle-component {
+  height: 200px;
+  padding: 30px 20px;
+  background-color: rgb(2, 33, 61);
+  font-family: teachersB;
+  color: #fff !important;
+  text-decoration: none;
+  font-family: teachersB;
+  &:hover {
+    background: rgb(8, 8, 24);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  h3 {
+    color: $appcolor4 !important;
+    font-family: teachersB;
+  }
+  .riddle-details {
+    border-right: solid 3px $appcolor4;
+    border-left: solid 3px $appcolor4;
+    height: 150px;
+    font-family: teachersB;
+  }
+}

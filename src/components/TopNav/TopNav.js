@@ -25,7 +25,7 @@ export const TopNav = () => {
           case "/sch-store":
           case "/sign-up":
           case "/cart-items":
-          case "/main-news":
+          case "main-news/:blog_id":
             setShowNav(false);
             break;
           default:

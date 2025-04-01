@@ -1,30 +1,35 @@
+@import "../../variables";
+
 .news-component {
   margin-top: 30px;
+
   h4 {
     margin: 20px;
   }
 }
 .read-more {
-  background: green;
+  background: $appcolor;
   color: #fff;
   text-decoration: none;
   padding: 10px;
 }
 .news-container {
-  padding-top: 50px;
-  height: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  h1 {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-top: 50px;
+  background: $appcolor2;
+  p {
     color: #fff;
+  }
+  h1 {
+    color: rgb(15, 14, 14);
   }
 }
 .main-img2 {
-  height: 400px;
+  height: 550px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .blog-link2 {
   color: #fff;
@@ -34,6 +39,8 @@
 .news-body {
   background: #f6f6f6;
   padding: 30px;
+  min-height: 340px;
+  margin-bottom: 30px;
 }
 .share {
   li {
@@ -42,4 +49,37 @@
       color: red;
     }
   }
+}
+.blog-socials {
+  top: 30%;
+  position: fixed;
+  left: -90%;
+  right: 100%;
+  width: 50px;
+  list-style: none;
+  font-size: 30px;
+  right: 20px;
+  color: $appcolor4;
+  a {
+    color: $appcolor4;
+    text-decoration: none;
+  }
+}
+.news-heading {
+  h3,
+  h1 {
+    color: $appcolor;
+  }
+}
+.riddle-corner {
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: rgb(40, 41, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 41, 75, 1) 2%,
+    rgba(25, 90, 126, 1) 39%,
+    rgba(30, 118, 123, 1) 90%
+  );
 }
