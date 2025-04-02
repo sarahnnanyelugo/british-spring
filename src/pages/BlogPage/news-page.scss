@@ -1,5 +1,13 @@
 @import "../../variables";
 
+.blog-page {
+  margin-top: 70px;
+  // background: url("../../assets/images/blog-bg.jpg");
+  // background-size: cover;
+  h1 {
+    color: $appcolor;
+  }
+}
 .news-component {
   margin-top: 30px;
 
@@ -16,7 +24,6 @@
 .news-container {
   padding-top: 10px;
   padding-bottom: 0px;
-  margin-top: 50px;
   background: $appcolor2;
   p {
     color: #fff;

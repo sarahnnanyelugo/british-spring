@@ -43,7 +43,7 @@ export const MainBlog = () => {
     <>
       <div className="col-md-12 news-container d-flex ">
         <Link
-          to={"/news-page"}
+          to={"/blog-page"}
           className="offset-md-1 blog-link2 col-md-2"
           style={{ flexGrow: 1 }}
         >
@@ -151,9 +151,8 @@ export const MainBlog = () => {
       ) : (
         ""
       )}{" "}
+      <h1 className="offset-md-2">Task your Brain</h1>
       <div className="news-heading riddle-corner">
-        <h3>Riddles</h3>
-
         <div className="row row-cols-1 row-cols-lg-3 g-lg-3 col-md-8 offset-md-2">
           {state2.list2.slice(0, 3).map((data, index) => (
             <Riddle data={data} key={data.id} />

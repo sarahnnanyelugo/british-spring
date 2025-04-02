@@ -51,7 +51,7 @@ export const CartItems = ({ cartItems, setCartItems, totalItemCount }) => {
   return (
     <>
       <div className="d-flex">
-        <Link to={"/sch-store"} className="back-link">
+        <Link to={"/sch-store"} className="back-link ">
           <FaLongArrowAltLeft />
           Back
         </Link>
@@ -64,9 +64,10 @@ export const CartItems = ({ cartItems, setCartItems, totalItemCount }) => {
         {" "}
         <div className="cart-item-div">
           <div className="cart-page">
-            <h3> Cart</h3>
+            <h3>Your Cart Items</h3>
+            <br />
             {cartItems.length > 0 ? (
-              <table responsive striped hover className="cart-table">
+              <Table responsive striped hover className="cart-table">
                 <thead>
                   <tr>
                     <th>Item</th>
@@ -119,7 +120,7 @@ export const CartItems = ({ cartItems, setCartItems, totalItemCount }) => {
                     </tr>
                   ))}
                 </tbody>
-              </table>
+              </Table>
             ) : (
               <center>
                 {" "}

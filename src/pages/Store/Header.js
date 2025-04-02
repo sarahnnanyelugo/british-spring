@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 export const Header = ({ totalItemCount }) => {
   return (
-    <div className="store-head d-flex">
+    <div className="store-head d-flex col-md-10 ">
       <h5 style={{ flexGrow: 1 }}>Store</h5>
       <Link to={"/cart-items"} className="cart-icon">
         <IoCartOutline />
-        <sup className="cart-count">{totalItemCount}</sup> Cart
+        <sup className="cart-count">{totalItemCount}</sup>
       </Link>
     </div>
   );

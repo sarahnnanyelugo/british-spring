@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./news-page.scss";
 import { latestNews } from "../../TestData/newsData";
+import { FaArrowLeft } from "react-icons/fa";
 
 import { Blog } from "../../components/Blog/Blog";
 export const BlogPage = () => {
@@ -12,27 +13,31 @@ export const BlogPage = () => {
 
   return (
     <>
-      {" "}
-      <div className="blog-page">
-        <center>
-          <h1>our news hub</h1>
-        </center>
-        <div className="flexy flexyM offset-md-5 mt5">
-          {" "}
-          <Link to={"/"} className="home-link">
-            HOME
-          </Link>
-          <span>
-            <i class="icofont-rounded-right"></i>
-          </span>
-          <h6>News</h6>
-        </div>
-      </div>
-      <h3 className="offset-md-2 mt">Stay Informed</h3>
-      <div className="row row-cols-1 row-cols-lg-2  g-lg-4 col-md-8 offset-md-2 mt5">
-        {state.list.map((data, index) => (
-          <Blog data={data} key={data.id} />
-        ))}
+      <div className="col-md-12 news-container d-flex ">
+        <Link
+          to={"/"}
+          className="offset-md-1 blog-link2 col-md-2"
+          style={{ flexGrow: 1 }}
+        >
+          <FaArrowLeft />
+          Back to Home
+        </Link>
+        <marquee behavior="scroll" direction="left">
+          <p>
+            {" "}
+            Subscribe to our blog, also like, comment and share... Kindly follow
+            us on all our social media platforms @britishspring
+          </p>
+        </marquee>
+      </div>{" "}
+      <div className="blog-page offset-md-2 col-md-8">
+        <h1>Welcome to our Blog Page</h1>
+        <h3>Stay Informed</h3>
+        <div className="row row-cols-1 row-cols-lg-2  g-lg-4   mt5">
+          {state.list.map((data, index) => (
+            <Blog data={data} key={data.id} />
+          ))}
+        </div>{" "}
       </div>
     </>
   );

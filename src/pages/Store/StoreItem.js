@@ -15,7 +15,7 @@ export const StoreItem = ({ data, onAddToCart, onItemClick }) => {
       onClick={onItemClick}
       style={{ cursor: "pointer" }}
     >
-      <img src={Photo} width="100%" height="70%" />
+      <img src={Photo} width="100%" />
       <div className="d-flex">
         {" "}
         <small style={{ flexGrow: 1 }}>{productName}</small>
@@ -27,7 +27,10 @@ export const StoreItem = ({ data, onAddToCart, onItemClick }) => {
           onAddToCart(data); // Add item to cart
         }}
       >
-        <IoCartOutline />
+        <span>
+          {" "}
+          <IoCartOutline />
+        </span>
         Add to cart
       </button>
     </div>

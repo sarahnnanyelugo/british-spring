@@ -25,11 +25,12 @@ export const TopNav = () => {
           case "/sch-store":
           case "/sign-up":
           case "/cart-items":
-          case "main-news/:blog_id":
+          case "/blog-page":
             setShowNav(false);
             break;
           default:
-            setShowNav(true);
+            if (currentUrl.includes("main-news")) setShowNav(false);
+            else setShowNav(true);
             break;
         }
         console.log(currentUrl, showNav);
