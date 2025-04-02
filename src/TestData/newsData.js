@@ -122,8 +122,7 @@ export const riddles = [
   },
   {
     question: "Why did the tree want to leave the woods? ",
-    answer:
-      "E, N, T. The letters are the first letters of the written numbers: one, two, three, four, five, etc. “Eight, nine, ten” are next.",
+    answer: "It wanted to branch out.",
     id: 3,
   },
   {
@@ -163,6 +162,6 @@ export const riddles = [
   {
     question: "What kind of band never plays music?",
     answer: "A rubber band",
-    id: 9,
+    id: 10,
   },
 ];

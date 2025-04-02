@@ -86,20 +86,10 @@ export const RiddlePage = () => {
                 <hr className="col-md-7" />
               </div>
 
-              <div className="row row-cols-1 row-cols-lg-3">
-                {state2.list2.map((data, index) => (
+              <div className="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+                {state2.list2.slice(3).map((data, index) => (
                   <Riddle data={data} key={data.id} />
                 ))}
-              </div>
-              <div className="news-heading">
-                <div className="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
-                  <div className="col">
-                    {" "}
-                    {/* {state2.list2.slice(0, 3).map((data, index) => (
-                      <Riddle data={data} key={data.id} />
-                    ))} */}
-                  </div>
-                </div>
               </div>
             </div>
 

@@ -350,14 +350,6 @@ export const Home = () => {
           <News />
         </div>
       </div>
-      {/* <div
-        className="col-md-12 offset-md-  row row-cols-1 row-cols-lg-4 g-2 g-lg-3 "
-        style={{ background: "#fff" }}
-      >
-        {state.list2.map((data, index) => (
-          <Blog data={data} key={"m" + index} />
-        ))}
-      </div> */}
     </>
   );
 };
