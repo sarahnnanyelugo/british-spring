@@ -12,7 +12,7 @@ const ImageRoll = ({ image, caption, onMoreInfo, portfolio }) => {
     depth === 0 ? null : <i>{generateNestedElements(depth - 1)}</i>;
 
   return (
-    <figure className="imageRoll" style={{ "--imageUrl": `url(${image})` }}>
+    <figure className="imageRoll" style={{ "--imageUrl": `url(${image})`,objectFit:"contain" }}>
       {generateNestedElements(60)}
       <figcaption>
         <h4>

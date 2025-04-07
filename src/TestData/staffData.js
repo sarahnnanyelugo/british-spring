@@ -1,7 +1,7 @@
-import Excursion from "../assets/images/staff/bose.png";
+import Excursion from "../assets/images/staff/chizoba.png";
 
-import Door from "../assets/images/staff/james.png";
-import Greeting from "../assets/images/staff/ifeco.png";
+import Door from "../assets/images/staff/chinedu.png";
+import Greeting from "../assets/images/staff/kingsley.png";
 import Classroom from "../assets/images/staff/sera.png";
 import Pat from "../assets/images/staff/pat.png";
 import Staff10 from "../assets/images/staff/staff3.jpg";
