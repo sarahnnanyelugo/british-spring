@@ -20,7 +20,7 @@ const Prefooter = () => {
               <div className="call-to-action">
                 {" "}
                 <center>
-                  <h1>Contact Us</h1>
+                  <Link to={"/contact"}><h1>Contact Us</h1></Link>
                 </center>
               </div>
             </Link>
