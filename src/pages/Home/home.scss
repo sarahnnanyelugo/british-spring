@@ -1,3 +1,7 @@
+@import "../../variables";
+
+
+
 .home-outer {
   position: relative;
   margin-top: -103px;
@@ -172,7 +176,7 @@
   }
 }
 .one {
-  color: skyblue;
+  color: $appcolor2;
   font-size: 58px;
   margin-right: 30px;
   font-family: playfairBLI;

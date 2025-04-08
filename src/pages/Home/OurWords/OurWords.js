@@ -57,7 +57,7 @@ const OurWords = () => {
         <br />
         Focused on <span>Character</span>
       </h1>
-      <div className="d-flex">
+      <div className="d-md-flex">
         {" "}
         <div className="col-md-4 offset-md-2">
           <div className="col-md-11">

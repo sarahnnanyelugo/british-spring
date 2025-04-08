@@ -2,12 +2,18 @@ import React from "react";
 import { LogoAnime } from "../../../components/LogoAnime/LogoAnime";
 import "./who-we-are.scss";
 import Img1 from "../../../assets/images/classSec.jpg";
+import Hero from "../../../assets/images/chess1.JPG";
+import Img2 from "../../../assets/images/chem-lab.jpg";
+
 import { Link } from "react-router-dom";
 export const WhoWeAre = () => {
   return (
     <>
-      <div className="who-we-are2">
-        <div className="banner"></div>
+      <div className="who-we-are2 col-md-12">
+        <div className="banner">
+        <img src={Hero} width="100%"/>
+        
+        </div>
         <div className="col-md-8 offset-md-2 d-flex mt-5">
           <hr className="col-6" />
           <LogoAnime />
@@ -41,7 +47,7 @@ export const WhoWeAre = () => {
             </p>
           </div>
           <div className="col-md-6 second-div">
-            <img src={Img1} width="100%" />
+            <img src={Img2} width="100%" />
           </div>
         </div>
         <div className="col-md-8 offset-md-2 d-md-flex education">
