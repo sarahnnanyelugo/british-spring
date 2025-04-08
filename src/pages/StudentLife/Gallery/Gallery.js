@@ -134,7 +134,7 @@ export const Gallery = () => {
         </div>
         <div id="galaxy" />
         <h1 className="offset-md-1" id="about-section">
-          Cultural Day
+          Sports Day
         </h1>
 
         <div className="gallery-sections col-md-10 offset-md-1">
